@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  transition: .3s;
+}
+:root{
+  --bg-body: #101010;
+  --secundary-color: rgb(255 0 67);
+}
+body{
+  background: var(--bg-body);
+}
+.container{
+  max-width: 960px;
+  width: 100%;
+  margin: auto;
+}
+.calc-content{
+  display: grid;
+  justify-content: center;
+  min-height: 100vh;
+  align-content: center;
+}
+.calc-items, .calc-total{
+  background: rgb(30 33 33)
+}
+.calc-title h2{
+  background: var(--secundary-color);
+  color: white;
+  font-family: "Bebas Neue";
+  text-align: center;
+  letter-spacing: 1.1px;
+  font-size: 2rem;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px
+}
+.calc-items{
+  display: flex
+}
+.tipsform *{
+  margin: 3px 15px;
+  font-family: "Montserrat";
+  color: white
+}
+.formselect, .formselect option, .forminput{
+  color: black;
+  margin: 0
+}
+#calc{
+  text-align: center;
+  padding: 10px 20px;
+  margin: 15px 28%;
+  cursor: pointer;
+  color: white;
+  background: var(--secundary-color);
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 3px
+}
+#calc:hover{
+  background: white;
+  color: var(--secundary-color)
+}
+.calc-total{
+  padding: 15px;
+  color: white;
+  font-family: "Montserrat";
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none
+}

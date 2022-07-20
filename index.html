@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Se liga nesse código">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d602d132f.js" crossorigin="anonymous"></script>
+    <title>Calculadora de Gorjeta</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc-content">
+        <div class="calc-title">
+          <h2>Calculadora de Gorjetas</h2>
+        </div>
+        <div class="calc-items">
+          <form class="tipsform" id="tipsform">
+            <label for="bill"><p id="ask1">Quanto ficou a conta?</p></label>
+            <p id="moneycolor">
+              R$ <input type="number" name="bill" placeholder="Ex: 100" id="bill" class="forminput" required>
+            </p>
+            <label for="servicequality"><p id="ask2">Como foi seu serviço?</p></label>
+            <p>
+              <select class="formselect" name="servicequality" id="servicequality">
+                <option value="0" disabled selected>-- Escolha uma opção</option>
+                <option value="0.05">5% - Péssimo</option>
+                <option value="0.1">10% - Ruim</option>
+                <option value="0.15">15% - Aceitável</option>
+                <option value="0.2">20% - Bom</option>
+                <option value="0.3">30% - Incrível</option>
+              </select>
+            </p>
+            <label for="people"><p id="ask3">Quantas pessoas vão dividir a conta?</p></label>
+            <p id="peoplecolor">
+              <input type="number" placeholder="Ex: 2" name="people" id="people" class="forminput" required> pessoa(s)
+            </p>
+            <button type="submit" id="calc">Calcular</button>
+          </form>
+        </div>
+        <div class="calc-total" id="totaltips">
+          Taxa de serviço: R$
+          <span id="tip">0.00</span>
+          <span id="each">cada</span>
+        </div>
+      </div>
+    </div>
+
+<script type="text/javascript" src="script.js"></script>
+  </body>
+</html>
