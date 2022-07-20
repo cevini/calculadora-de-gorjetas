@@ -32,6 +32,7 @@ body{
 }
 .calc-title h2{
   background: var(--secundary-color);
+  padding-top: 3px;
   color: white;
   font-family: "Bebas Neue";
   text-align: center;
